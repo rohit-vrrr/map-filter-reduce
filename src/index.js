@@ -9,6 +9,9 @@ const map = numbers.map(function (x) {
 });
 console.log("Map", map);
 
+// const map = numbers.map((x) => x * 2);
+// console.log("Map", map);
+
 /*
 const newMapArr = [];
 numbers.forEach(function (x) {
@@ -23,6 +26,9 @@ const filter = numbers.filter(function (x) {
   return x > 10;
 });
 console.log("Filter", filter);
+
+// const filter = numbers.filter((num) => num < 10);
+// console.log("Filter", filter);
 
 /*
 const newFilterArr = [];
@@ -43,6 +49,11 @@ var reduce = numbers.reduce(function (accumulator, currentNumber) {
 });
 console.log("Reduce", reduce);
 
+// var reduce = numbers.reduce(
+//   (accumulator, currentNumber) => accumulator + currentNumber
+// );
+// console.log("Reduce", reduce);
+
 /*
 var newReduceNum = 0;
 numbers.forEach(function(x) {
@@ -58,12 +69,18 @@ const find = numbers.find(function (x) {
 });
 console.log("Find", find);
 
+// const find = numbers.find((num) => num > 10);
+// console.log("Find", find);
+
 //FindIndex - find the index of the first item that matches.
 
 const findIndex = numbers.findIndex(function (x) {
   return x > 10;
 });
 console.log("FindIndex", findIndex);
+
+// const findIndex = numbers.findIndex((num) => num > 10);
+// console.log("findIndex", findIndex);
 
 /////////////// Challenge ///////////////
 const emojiMeanings = emojipedia.map(function (eachEmoji) {
